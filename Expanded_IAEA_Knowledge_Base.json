@@ -1,0 +1,229 @@
+{
+    "radiation_protection": {
+        "occupational_exposure_limit": "20 mSv per year (averaged over 5 years), with no more than 50 mSv in a single year.",
+        "public_exposure_limit": "1 mSv per year.",
+        "lens_of_eye_limit": "20 mSv/year for occupational; 15 mSv/year for public.",
+        "skin_dose_limit": "500 mSv/year for workers; 50 mSv/year for public.",
+        "extremities_dose_limit": "500 mSv/year (hands and feet).",
+        "pregnant_worker_limit": "Equivalent dose to fetus must not exceed 1 mSv during pregnancy.",
+        "classification_zone_threshold": {
+            "controlled_area": "> 6 mSv/year",
+            "supervised_area": "1 - 6 mSv/year"
+        },
+        "collective_dose_limit": "Must be optimized to be As Low As Reasonably Achievable (ALARA).",
+        "time_distance_shielding_principle": "Minimize time, maximize distance, and use appropriate shielding to reduce exposure.",
+        "dosimeter_types": "Personal electronic dosimeters, thermoluminescent dosimeters (TLD), film badges.",
+        "shielding_materials": [
+            "Lead",
+            "Concrete",
+            "Water",
+            "Polyethylene"
+        ]
+    },
+    "regulatory_inspection": {
+        "inspection_frequency": "Quarterly for fuel facilities; monthly for critical safety systems.",
+        "inspection_types": [
+            "Routine",
+            "Reactive",
+            "Follow-up"
+        ],
+        "inspection_elements": [
+            "Document review",
+            "Operational procedures",
+            "Equipment status",
+            "Safety culture assessment",
+            "Interviews with staff"
+        ],
+        "reporting_deadline": "Incident reports within 24 hours; full reports within 10 working days.",
+        "non_compliance_response": "Immediate corrective action and regulatory notification.",
+        "inspector_qualifications": "Inspectors must have training in radiation safety, facility-specific hazards, and regulatory standards.",
+        "pre_inspection_checklist": [
+            "Review previous inspection reports",
+            "Verify facility license and documentation",
+            "Check calibration records"
+        ],
+        "post_inspection_actions": [
+            "Issue findings report",
+            "Assign corrective actions with deadlines",
+            "Schedule follow-up inspection"
+        ]
+    },
+    "maintenance_and_surveillance": {
+        "preventive_maintenance": "Performed monthly or per manufacturer’s schedule.",
+        "corrective_maintenance": "Immediately upon equipment failure.",
+        "safety_system_testing": "Weekly or monthly depending on system type.",
+        "equipment_calibration": "Radiation monitors calibrated annually or as per use conditions.",
+        "logbook_requirements": "All maintenance and surveillance actions must be logged and signed.",
+        "critical_systems": [
+            "Reactor control system",
+            "Cooling systems",
+            "Emergency diesel generators"
+        ],
+        "common_failures": [
+            "Sensor drift",
+            "Valve leaks",
+            "Power loss",
+            "Corrosion in piping"
+        ],
+        "predictive_maintenance_tools": [
+            "Vibration analysis",
+            "Thermal imaging",
+            "Ultrasound testing"
+        ]
+    },
+    "emergency_procedures": {
+        "emergency_levels": [
+            "Alert",
+            "Site Area Emergency",
+            "General Emergency"
+        ],
+        "evacuation_threshold": "Ambient dose rate > 100 µSv/h in uncontrolled areas.",
+        "assembly_points": "Predefined locations outside radiation zones.",
+        "PPE_use": "Mandatory for responders: full suit, gloves, respirator, dosimeter.",
+        "emergency_drills": "Conducted every 6 months and evaluated by authority.",
+        "emergency_contact_protocol": "Notify Radiation Protection Officer, Site Manager, and Regulatory Authority immediately.",
+        "first_aid_guidelines": "Evacuate injured, perform basic life support, avoid contamination of responders.",
+        "communication_plan": "Use secured radios or internal hotlines; log all communication.",
+        "public_notification": "Follow approved emergency communication scripts; notify NRRC if external risk exists."
+    },
+    "radiation_monitoring": {
+        "portable_monitors": "Checked before use and calibrated annually.",
+        "area_monitors": "Installed in controlled and supervised areas; alarms at 5 µSv/h.",
+        "air_sampling": "Daily in active zones; immediate in case of suspected release.",
+        "surface_contamination_limit": {
+            "alpha": "4 Bq/cm²",
+            "beta_gamma": "40 Bq/cm²"
+        },
+        "real_time_monitoring_systems": [
+            "Gamma cameras",
+            "Area radiation monitors",
+            "Remote detectors"
+        ],
+        "monitoring_frequency_guidelines": {
+            "normal_operation": "Daily",
+            "maintenance": "Hourly",
+            "post-incident": "Continuous until stabilized"
+        },
+        "environmental_sampling": [
+            "Soil",
+            "Vegetation",
+            "Groundwater",
+            "Air filters"
+        ],
+        "decontamination_procedure": "Use wet wiping, HEPA vacuuming, or chemical solutions depending on contamination type."
+    },
+    "radioactive_waste_management": {
+        "segregation": "By type (solid, liquid, combustible, non-combustible).",
+        "labeling": "Include isotope, activity, date, responsible person.",
+        "storage": "Shielded and ventilated rooms; access restricted.",
+        "inventory": "Updated monthly and reviewed annually.",
+        "classification_by_activity": {
+            "low_level_waste": "Includes paper, rags, tools with low radioactivity; short half-life isotopes.",
+            "intermediate_level_waste": "Contains resins, chemical sludge; may require shielding but not cooling.",
+            "high_level_waste": "Highly radioactive materials from reactor fuel; generates heat and needs cooling and shielding."
+        },
+        "storage_limits": "Must not exceed facility capacity; follow national and IAEA thresholds for each class.",
+        "disposal_guidelines": {
+            "low_level": "Near-surface disposal in engineered trenches or vaults.",
+            "intermediate_level": "Disposal in concrete-lined repositories or deep boreholes.",
+            "high_level": "Requires deep geological repository; not for surface storage."
+        },
+        "internal_transport": "Use shielded containers with clear labeling; transport via designated paths only.",
+        "examples_saudi_practice": "Waste categorized and stored at centralized interim storage facilities; regulatory oversight by NRRC.",
+        "waste_characterization_methods": [
+            "Gamma spectrometry",
+            "Alpha counting",
+            "Calorimetry"
+        ],
+        "container_types": [
+            "Steel drums",
+            "Concrete casks",
+            "Polyethylene liners"
+        ],
+        "ventilation_standards": "Minimum 6 air changes per hour; HEPA filters required.",
+        "long_term_storage_strategy": "Centralized interim storage with temperature, radiation, and humidity monitoring."
+    },
+    "transportation": {
+        "package_types": [
+            "Excepted",
+            "Industrial",
+            "Type A",
+            "Type B"
+        ],
+        "documentation": "Shipper’s declaration, emergency instructions, labeling.",
+        "vehicle_requirements": "Radiation signage, fire extinguisher, trained driver.",
+        "dose_limits_during_transport": "2 mSv/h on surface, 0.1 mSv/h at 2 meters.",
+        "transport_routes": "Must be pre-approved and avoid densely populated areas.",
+        "escort_requirements": "Armed or trained personnel required for high-level radioactive shipments.",
+        "accident_response_kit": [
+            "Warning signs",
+            "Absorbent material",
+            "PPE",
+            "Sealable bags",
+            "Portable radiation meter"
+        ],
+        "labeling_standards": "Follow IAEA TS-R-1: include UN number, activity, isotope, and hazard label."
+    },
+    "nuclear_fuel_cycle": {
+        "stages": [
+            "Mining and milling",
+            "Conversion",
+            "Enrichment",
+            "Fuel fabrication",
+            "Reactor operation",
+            "Spent fuel storage",
+            "Reprocessing or disposal"
+        ],
+        "fuel_types": [
+            "UO2 pellets",
+            "MOX fuel",
+            "TRISO particles"
+        ],
+        "storage_options": [
+            "Dry cask",
+            "Spent fuel pools"
+        ],
+        "safeguards_measures": "IAEA monitoring, seals, surveillance cameras"
+    },
+    "nuclear_security": {
+        "threat_scenarios": [
+            "Theft of radioactive material",
+            "Insider threat",
+            "Sabotage",
+            "Cyber-attack"
+        ],
+        "physical_protection_measures": [
+            "Access control systems",
+            "Armed guards",
+            "Intrusion detection",
+            "Barriers and fences"
+        ],
+        "response_protocols": "Immediate lockdown, notify national security, initiate emergency plan",
+        "personnel_reliability": "Background checks, psychological assessment, access limitation"
+    },
+    "licensing_and_authorization": {
+        "license_types": [
+            "Construction permit",
+            "Operating license",
+            "Decommissioning license"
+        ],
+        "application_requirements": [
+            "Safety analysis report",
+            "Environmental impact assessment",
+            "Emergency preparedness plan"
+        ],
+        "review_process": "Regulatory review, public hearing, conditional approval",
+        "renewal_periods": "Typically every 10 years or upon major changes"
+    },
+    "notable_incidents": {
+        "three_mile_island": "1979 partial meltdown in USA, caused by equipment failure and human error.",
+        "chernobyl": "1986 explosion in Ukraine due to reactor design flaws and operator mistakes.",
+        "fukushima": "2011 disaster in Japan triggered by tsunami, led to core meltdown in three reactors.",
+        "lessons_learned": [
+            "Importance of containment structures",
+            "Need for passive safety systems",
+            "Enhanced emergency preparedness",
+            "Public transparency and international cooperation"
+        ]
+    }
+}
