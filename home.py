@@ -1,98 +1,69 @@
 import streamlit as st
+import json
+from PIL import Image
 
-# إعداد اللغة الافتراضية
+# إعداد الصفحة
+st.set_page_config(page_title="RAQIB | Nuclear Inspection Assistant", layout="wide")
+logo = Image.open("favicon.png")
+st.image(logo, width=70)
+
+# تحميل قاعدة المعرفة
+with open("RAQIB_KnowledgeBase_Multilang_Complete.json", "r", encoding="utf-8") as f:
+    knowledge = json.load(f)
+
+# اللغة الافتراضية
 if "language" not in st.session_state:
-    st.session_state.language = "en"
+    st.session_state.language = "English"
 
-# واجهة اختيار اللغة في الشريط الجانبي
-lang = st.sidebar.selectbox("اختر اللغة | Choose Language", ["العربية", "English", "Deutsch", "한국어"])
-if lang == "العربية":
-    st.session_state.language = "ar"
-elif lang == "Deutsch":
-    st.session_state.language = "de"
-elif lang == "한국어":
-    st.session_state.language = "kr"
-else:
-    st.session_state.language = "en"
+# اختيار اللغة من الواجهة
+lang_options = {
+    "العربية": "Arabic",
+    "English": "English",
+    "Deutsch": "German",
+    "한국어": "Korean"
+}
+selected_lang_display = st.selectbox("اختر اللغة | Choose Language", list(lang_options.keys()))
+st.session_state.language = lang_options[selected_lang_display]
+lang = st.session_state.language
 
-# قاعدة النصوص لكل لغة
-texts = {
-    "ar": {
+# نصوص واجهة المستخدم حسب اللغة
+ui = {
+    "Arabic": {
         "title": "رقيب | المساعد الذكي للتفتيش النووي",
-        "select_page": "اختر الصفحة",
-        "home": "الرئيسية",
-        "inspection": "لوحة التفتيش",
-        "training": "التدريب والتوعية",
-        "support": "الدعم الفني",
-        "welcome": "مرحبًا بك في رقيب",
-        "home_msg": "يساعدك رقيب على الوصول إلى الإجراءات والحدود التنظيمية بكل سهولة.",
-        "inspection_msg": "راجع حدود الأمان والبروتوكولات حسب القسم المختار.",
-        "training_msg": "استعرض أدلة الوكالة الدولية للطاقة الذرية ودروس التوعية.",
-        "support_msg": "للدعم، تواصل معنا عبر: @Nuclear2024 | khayratum@gmail.com"
+        "welcome": "مرحبًا بك في رقيب، اختر قسمًا للاطلاع على محتواه:",
+        "section_title": "القسم",
+        "topic_title": "الموضوع",
+        "result": "المحتوى"
     },
-    "en": {
+    "English": {
         "title": "RAQIB | Nuclear Inspection Assistant",
-        "select_page": "Select Page",
-        "home": "Home",
-        "inspection": "Inspection Dashboard",
-        "training": "Training & Awareness",
-        "support": "Technical Support",
-        "welcome": "Welcome to RAQIB",
-        "home_msg": "This intelligent assistant helps you access procedures and regulatory thresholds easily.",
-        "inspection_msg": "Review safety limits and protocols by category.",
-        "training_msg": "Browse IAEA guides and awareness materials.",
-        "support_msg": "For support, contact us: @Nuclear2024 | khayratum@gmail.com"
+        "welcome": "Welcome to RAQIB. Choose a section to explore its content:",
+        "section_title": "Section",
+        "topic_title": "Topic",
+        "result": "Content"
     },
-    "de": {
+    "German": {
         "title": "RAQIB | Nuklearer Inspektionsassistent",
-        "select_page": "Seite wählen",
-        "home": "Startseite",
-        "inspection": "Inspektionsübersicht",
-        "training": "Schulung & Aufklärung",
-        "support": "Technischer Support",
-        "welcome": "Willkommen bei RAQIB",
-        "home_msg": "Dieser Assistent hilft Ihnen, Richtlinien und Schwellenwerte leicht zu finden.",
-        "inspection_msg": "Überprüfen Sie Sicherheitsgrenzen und Protokolle nach Kategorie.",
-        "training_msg": "Durchsuchen Sie IAEA-Leitfäden und Schulungsmaterialien.",
-        "support_msg": "Support: @Nuclear2024 | khayratum@gmail.com"
+        "welcome": "Willkommen bei RAQIB. Wählen Sie einen Bereich, um Inhalte anzuzeigen:",
+        "section_title": "Abschnitt",
+        "topic_title": "Thema",
+        "result": "Inhalt"
     },
-    "kr": {
+    "Korean": {
         "title": "RAQIB | 원자력 검사 도우미",
-        "select_page": "페이지 선택",
-        "home": "홈",
-        "inspection": "검사 대시보드",
-        "training": "교육 및 인식",
-        "support": "기술 지원",
-        "welcome": "RAQIB에 오신 것을 환영합니다",
-        "home_msg": "이 도우미는 절차와 규제를 쉽게 접근할 수 있게 도와줍니다.",
-        "inspection_msg": "범주별로 안전 한도 및 프로토콜을 검토하십시오.",
-        "training_msg": "IAEA 가이드와 교육 자료를 살펴보세요.",
-        "support_msg": "지원 문의: @Nuclear2024 | khayratum@gmail.com"
+        "welcome": "RAQIB에 오신 것을 환영합니다. 섹션을 선택하여 내용을 확인하세요:",
+        "section_title": "섹션",
+        "topic_title": "주제",
+        "result": "내용"
     }
 }
 
-# اللغة المختارة
-t = texts[st.session_state.language]
+t = ui[lang]
 
-# تحديد الصفحة من القائمة الجانبية
-page = st.sidebar.radio(t["select_page"], [t["home"], t["inspection"], t["training"], t["support"]])
-
-# عنوان رئيسي
 st.title(t["title"])
+st.markdown(f"### {t['welcome']}")
 
-# محتوى الصفحة حسب الاختيار
-if page == t["home"]:
-    st.subheader(t["welcome"])
-    st.markdown(t["home_msg"])
-
-elif page == t["inspection"]:
-    st.subheader(t["inspection"])
-    st.markdown(t["inspection_msg"])
-
-elif page == t["training"]:
-    st.subheader(t["training"])
-    st.markdown(t["training_msg"])
-
-elif page == t["support"]:
-    st.subheader(t["support"])
-    st.markdown(t["support_msg"])
+# عرض كل الأقسام ومحتواها داخل الصفحة
+for section_name, topics in knowledge[lang].items():
+    with st.expander(f"📂 {section_name}", expanded=False):
+        topic_selected =
