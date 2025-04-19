@@ -1,0 +1,94 @@
+{
+    "العربية": {
+        "التفتيش": {
+            "أنواع التفتيش": "تفتيش دوري، مفاجئ، استجابة لحادث، تحقق دوري.",
+            "متطلبات ما قبل التفتيش": "استعراض الوثائق، التراخيص، تحليل المخاطر.",
+            "الإجراءات الميدانية": "قياس جرعات، مسح إشعاعي، فحص المعدات.",
+            "الحدود التنظيمية": "حد الجرعة للعاملين والزوار، متطلبات الإبلاغ.",
+            "تقييم الالتزام": "تقييم المخالفات، تشغيل الأنظمة، الالتزام بالضوابط."
+        },
+        "التدريب": {
+            "أنواع المحتوى": "أدلة، فيديوهات، اختبارات، عروض تفاعلية.",
+            "تصنيفات التدريب": "حماية من الإشعاع، إدارة النفايات، النقل، الطوارئ.",
+            "المستويات التدريبية": "أساسي، متوسط، متقدم.",
+            "أهداف التعلم": "فهم الإشعاع، تطبيق السلامة، تحليل الحوادث.",
+            "مصادر خارجية": "روابط IAEA، وثائق تعليمية، قنوات موثوقة."
+        },
+        "الدعم": {
+            "معدات الحماية الشخصية": "مراييل رصاص، قفازات، نظارات واقية حسب مستوى الإشعاع.",
+            "البلاغات": "الإبلاغ عن حادث إشعاعي يتم عبر نموذج موحد وإرسال للهيئة.",
+            "الأسئلة الشائعة": "كيف أتحقق من الجرعة؟ ماذا أفعل عند التسرب؟ كيف أبلغ؟",
+            "الدعم التقني": "في حال تعطل النظام أو الأجهزة، تواصل مع مسؤول الدعم.",
+            "الموارد والروابط": "روابط إلى أدلة التحقق، مواقع الوكالة، قنوات التدريب الرسمية."
+        }
+    },
+    "English": {
+        "Inspection": {
+            "Inspection Types": "Routine, unannounced, incident response, periodic verification.",
+            "Pre-Inspection Requirements": "Document review, licensing check, risk analysis.",
+            "Field Procedures": "Dose measurement, radiological survey, equipment inspection.",
+            "Regulatory Limits": "Worker and visitor dose limits, reporting thresholds.",
+            "Compliance Evaluation": "Violation reports, system review, technical conformity."
+        },
+        "Training": {
+            "Content Types": "Manuals, videos, quizzes, interactive slides.",
+            "Training Categories": "Radiation protection, waste management, transport, emergencies.",
+            "Training Levels": "Basic, Intermediate, Advanced.",
+            "Learning Objectives": "Understand radiation, apply safety, analyze incidents.",
+            "External Resources": "IAEA links, certified documents, trusted channels."
+        },
+        "Support": {
+            "PPE Equipment": "Lead aprons, gloves, eyewear based on radiation level.",
+            "Incident Reporting": "Report radiation incidents using the standard form to the authority.",
+            "FAQs": "How to check dose? What to do during a leak? How to report?",
+            "Technical Support": "For system or device issues, contact support officer.",
+            "Resources & Links": "Access compliance guides, IAEA websites, and official training channels."
+        }
+    },
+    "Deutsch": {
+        "Inspektion": {
+            "Inspektionsarten": "Routine, unangekündigt, Notfallreaktion, regelmäßige Überprüfung.",
+            "Voraussetzungen vor der Inspektion": "Dokumentenprüfung, Lizenzkontrolle, Risikoanalyse.",
+            "Feldverfahren": "Dosisbewertung, Strahlungserhebung, Geräteprüfung.",
+            "Regulatorische Grenzwerte": "Dosisgrenzen für Arbeiter und Besucher, Meldepflichten.",
+            "Bewertung der Einhaltung": "Verstoßberichte, Systembewertung, technische Konformität."
+        },
+        "Schulung": {
+            "Inhaltstypen": "Handbücher, Videos, Tests, interaktive Präsentationen.",
+            "Schulungskategorien": "Strahlenschutz, Abfallmanagement, Transport, Notfälle.",
+            "Trainingsniveaus": "Grundlagen, Mittelstufe, Fortgeschritten.",
+            "Lernziele": "Strahlung verstehen, Sicherheit anwenden, Vorfälle analysieren.",
+            "Externe Ressourcen": "IAEO-Links, zertifizierte Dokumente, vertrauenswürdige Quellen."
+        },
+        "Support": {
+            "PSA-Ausrüstung": "Bleischürzen, Handschuhe, Schutzbrillen je nach Strahlungsniveau.",
+            "Vorfallmeldung": "Melden Sie Strahlungsvorfälle mit dem Standardformular an die Behörde.",
+            "Häufige Fragen": "Wie überprüfe ich die Dosis? Was tun bei Leckagen? Wie melden?",
+            "Technischer Support": "Bei System- oder Geräteproblemen Support kontaktieren.",
+            "Ressourcen & Links": "Zugriff auf Leitfäden, IAEO-Websites und offizielle Schulungskanäle."
+        }
+    },
+    "한국어": {
+        "검사": {
+            "검사 유형": "정기, 불시, 사고 대응, 정기 검증.",
+            "사전 검사 요건": "문서 검토, 허가 확인, 위험 분석.",
+            "현장 절차": "선량 측정, 방사선 조사, 장비 검사.",
+            "규제 한도": "작업자 및 방문자 선량 한도, 보고 기준.",
+            "준수 평가": "위반 보고서, 시스템 검토, 기술적 적합성."
+        },
+        "교육": {
+            "콘텐츠 유형": "매뉴얼, 비디오, 퀴즈, 인터랙티브 슬라이드.",
+            "교육 분류": "방사선 보호, 폐기물 관리, 운송, 비상 사태.",
+            "교육 수준": "기초, 중급, 고급.",
+            "학습 목표": "방사선 이해, 안전 적용, 사고 분석.",
+            "외부 자료": "IAEA 링크, 인증 문서, 신뢰할 수 있는 채널."
+        },
+        "지원": {
+            "PPE 장비": "방사선 수준에 따라 납 앞치마, 장갑, 보호안경 사용.",
+            "사고 보고": "표준 양식을 사용하여 방사선 사고를 당국에 보고하세요.",
+            "자주 묻는 질문": "선량 확인 방법? 누출 시 대처법? 보고 절차?",
+            "기술 지원": "시스템 또는 장치 문제는 기술 지원에 문의하세요.",
+            "자료 및 링크": "가이드, IAEA 웹사이트, 공식 교육 채널에 접근하세요."
+        }
+    }
+}
