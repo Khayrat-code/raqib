@@ -14,7 +14,7 @@ with open("RAQIB_KnowledgeBase_Expanded.json", "r", encoding="utf-8") as f:
 
 # عرض اختيار اللغة من القاعدة نفسها
 languages = list(knowledge.keys())
-lang = st.radio("اختر اللغة | Choose Language", languages)
+lang = st.radio("اختر اللغة | Choose Language", ["العربية", "English", "Deutsch", "한국어"])
 
 # عرض الأقسام حسب اللغة المختارة
 sections = list(knowledge[lang].keys())
