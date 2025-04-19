@@ -1,0 +1,82 @@
+{
+    "العربية": {
+        "التفتيش": {
+            "أنواع التفتيش": "تفتيش دوري، مفاجئ، استجابة لحادث، تحقق دوري.",
+            "متطلبات ما قبل التفتيش": "استعراض الوثائق، التراخيص، تحليل المخاطر.",
+            "الإجراءات الميدانية": "قياس جرعات، مسح إشعاعي، فحص المعدات.",
+            "الحدود التنظيمية": "حد الجرعة للعاملين والزوار، متطلبات الإبلاغ.",
+            "تقييم الالتزام": "تقييم المخالفات، تشغيل الأنظمة، الالتزام بالضوابط."
+        },
+        "التدريب": {
+            "أنواع المحتوى": "أدلة، فيديوهات، اختبارات، عروض تفاعلية.",
+            "تصنيفات التدريب": "حماية من الإشعاع، إدارة النفايات، النقل، الطوارئ.",
+            "المستويات التدريبية": "أساسي، متوسط، متقدم.",
+            "أهداف التعلم": "فهم الإشعاع، تطبيق السلامة، تحليل الحوادث.",
+            "مصادر خارجية": "روابط IAEA، وثائق تعليمية، قنوات موثوقة."
+        },
+        "الدعم": {
+            "معدات الوقاية الشخصية": "مراييل رصاص، قفازات، نظارات واقية.",
+            "الأسئلة الشائعة": "أين أجد حدود الجرعة؟ كيف أبلغ عن تسريب إشعاعي؟"
+        }
+    },
+    "English": {
+        "Inspection": {
+            "Inspection Types": "Routine, unannounced, incident response, periodic verification.",
+            "Pre-Inspection Requirements": "Document review, licensing check, risk analysis.",
+            "Field Procedures": "Dose measurement, radiological survey, equipment inspection.",
+            "Regulatory Limits": "Worker and visitor dose limits, reporting thresholds.",
+            "Compliance Evaluation": "Violation reports, system review, technical conformity."
+        },
+        "Training": {
+            "Content Types": "Manuals, videos, quizzes, interactive slides.",
+            "Training Categories": "Radiation protection, waste management, transport, emergencies.",
+            "Training Levels": "Basic, Intermediate, Advanced.",
+            "Learning Objectives": "Understand radiation, apply safety, analyze incidents.",
+            "External Resources": "IAEA links, certified documents, trusted channels."
+        },
+        "Support": {
+            "PPE Requirements": "Lead aprons, gloves, protective eyewear.",
+            "FAQs": "Where to find dose limits? How to report a leak?"
+        }
+    },
+    "Deutsch": {
+        "Inspektion": {
+            "Inspektionsarten": "Routine, unangekündigt, Notfallreaktion, regelmäßige Überprüfung.",
+            "Voraussetzungen vor der Inspektion": "Dokumentenprüfung, Lizenzkontrolle, Risikoanalyse.",
+            "Feldverfahren": "Dosisbewertung, Strahlungserhebung, Geräteprüfung.",
+            "Regulatorische Grenzwerte": "Dosisgrenzen für Arbeiter und Besucher, Meldepflichten.",
+            "Bewertung der Einhaltung": "Verstoßberichte, Systembewertung, technische Konformität."
+        },
+        "Schulung": {
+            "Inhaltstypen": "Handbücher, Videos, Tests, interaktive Präsentationen.",
+            "Schulungskategorien": "Strahlenschutz, Abfallmanagement, Transport, Notfälle.",
+            "Trainingsniveaus": "Grundlagen, Mittelstufe, Fortgeschritten.",
+            "Lernziele": "Strahlung verstehen, Sicherheit anwenden, Vorfälle analysieren.",
+            "Externe Ressourcen": "IAEO-Links, zertifizierte Dokumente, vertrauenswürdige Quellen."
+        },
+        "Support": {
+            "PSA-Anforderungen": "Bleischürzen, Handschuhe, Schutzbrillen.",
+            "FAQs": "Wo finde ich Dosisgrenzen? Wie melde ich ein Leck?"
+        }
+    },
+    "한국어": {
+        "검사": {
+            "검사 유형": "정기, 불시, 사고 대응, 정기 검증.",
+            "사전 검사 요건": "문서 검토, 허가 확인, 위험 분석.",
+            "현장 절차": "선량 측정, 방사선 조사, 장비 검사.",
+            "규제 한도": "작업자 및 방문자 선량 한도, 보고 기준.",
+            "준수 평가": "위반 보고서, 시스템 검토, 기술적 적합성."
+        },
+        "교육": {
+            "콘텐츠 유형": "매뉴얼, 비디오, 퀴즈, 인터랙티브 슬라이드.",
+            "교육 분류": "방사선 보호, 폐기물 관리, 운송, 비상 사태.",
+            "교육 수준": "기초, 중급, 고급.",
+            "학습 목표": "방사선 이해, 안전 적용, 사고 분석.",
+            "외부 자료": "IAEA 링크, 인증 문서, 신뢰할 수 있는 채널."
+        },
+        "지원": {
+            "PPE 요건": "납 앞치마, 장갑, 보호안경.",
+            "자주 묻는 질문": "선량 한도는 어디서 확인하나요? 누출은 어떻게 신고하나요?"
+        }
+    }
+}
