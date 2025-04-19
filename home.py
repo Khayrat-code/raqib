@@ -52,20 +52,20 @@ st.markdown(f"### {t['welcome']}")
 # عرض جميع الأقسام داخل Expanders
 for section_name, topics in knowledge[lang].items():
 
-    st.markdown(
+   import streamlit as st
+
+# ... هنا محتوى صفحتك كامل فوق ...
+
+# توقيع يظهر بأسفل الصفحة فقط
+st.markdown(
     """
-    <hr style="margin-top: 50px; margin-bottom: 10px;">
-    <div style="text-align: center; font-size: 14px; color: gray;">
+    <div style="position: fixed; bottom: 0; width: 100%; padding: 10px 0; background-color: #f0f2f6; text-align: center; font-size: 13px; color: #555;">
         تم بواسطة خيرات الأمير
-        <a href="https://twitter.com/Nuclear2024" target="_blank" style="text-decoration: none; color: gray; margin-left: 8px;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023.svg" width="16" style="vertical-align: middle; margin-right: 4px;">
+        <a href="https://twitter.com/Nuclear2024" target="_blank" style="text-decoration: none; color: #555; margin-left: 8px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023.svg" width="14" style="vertical-align: middle; margin-right: 4px;">
             @Nuclear2024
         </a>
     </div>
     """,
     unsafe_allow_html=True
 )
-    with st.expander(f"📂 {section_name}", expanded=False):
-        topic_selected = st.selectbox(f"{t['topic_title']} - {section_name}", list(topics.keys()), key=section_name)
-        st.markdown(f"*{t['result']}*:")
-        st.success(topics[topic_selected])
