@@ -1,62 +1,72 @@
 import streamlit as st
 import json
-from PIL import Image
 
-# إعداد الصفحة
-st.set_page_config(page_title="RAQIB | Nuclear Inspection Assistant", layout="wide")
-logo = Image.open("favicon.png")
-st.image(logo, width=70)
+st.set_page_config(page_title="RAQIB | Home", page_icon="favicon.png")
 
-# تحميل قاعدة البيانات الموسعة
-with open("RAQIB_KnowledgeBase_Complete_Final.json", "r", encoding="utf-8") as f:
+# إعداد اللغة
+if "language" not in st.session_state:
+    st.session_state.language = "ar"
+
+lang_options = {
+    "ar": "العربية",
+    "en": "English",
+    "de": "Deutsch",
+    "ko": "한국어"
+}
+
+lang = st.selectbox("اختر اللغة | Choose Language", options=list(lang_options.keys()),
+                    format_func=lambda x: lang_options[x])
+st.session_state.language = lang
+
+# تحميل قاعدة البيانات المحدثة
+with open("RAQIB_KnowledgeBase_Full_Expanded.json", "r", encoding="utf-8") as f:
     knowledge = json.load(f)
 
-# اختيار اللغة من الواجهة
-selected_lang = st.selectbox("اختر اللغة | Choose Language", ["العربية", "English", "Deutsch", "한국어"])
-lang = selected_lang  # لأن المفاتيح في JSON بهذا الشكل بالضبط
-
-# نصوص واجهة المستخدم حسب اللغة
-ui = {
-    "العربية": {
-        "title": "رقيب | المساعد الذكي للتفتيش النووي",
+# ترجمات العناوين حسب اللغة
+titles = {
+    "ar": {
+        "app_title": "رقيب | المساعد الذكي للتفتيش النووي",
         "welcome": "مرحبًا بك في رقيب، اختر قسمًا للاطلاع على محتواه:",
-        "topic_title": "الموضوع",
-        "result": "المحتوى"
+        "select_section": "اختر القسم",
+        "select_topic": "اختر الموضوع",
+        "result": "النتيجة"
     },
-    "English": {
-        "title": "RAQIB | Nuclear Inspection Assistant",
-        "welcome": "Welcome to RAQIB. Choose a section to explore its content:",
-        "topic_title": "Topic",
-        "result": "Content"
+    "en": {
+        "app_title": "RAQIB | Nuclear Inspection Assistant",
+        "welcome": "Welcome to RAQIB. Choose a section to view its content:",
+        "select_section": "Select Section",
+        "select_topic": "Select Topic",
+        "result": "Result"
     },
-    "Deutsch": {
-        "title": "RAQIB | Nuklearer Inspektionsassistent",
-        "welcome": "Willkommen bei RAQIB. Wählen Sie einen Bereich, um Inhalte anzuzeigen:",
-        "topic_title": "Thema",
-        "result": "Inhalt"
+    "de": {
+        "app_title": "RAQIB | Nuklearer Inspektionsassistent",
+        "welcome": "Willkommen bei RAQIB. Wählen Sie einen Bereich aus:",
+        "select_section": "Abschnitt wählen",
+        "select_topic": "Thema wählen",
+        "result": "Ergebnis"
     },
-    "한국어": {
-        "title": "RAQIB | 원자력 검사 도우미",
+    "ko": {
+        "app_title": "RAQIB | 원자력 검사 도우미",
         "welcome": "RAQIB에 오신 것을 환영합니다. 섹션을 선택하여 내용을 확인하세요:",
-        "topic_title": "주제",
-        "result": "내용"
+        "select_section": "섹션 선택",
+        "select_topic": "주제 선택",
+        "result": "결과"
     }
 }
 
-t = ui[lang]
+st.title(titles[lang]["app_title"])
+st.write(titles[lang]["welcome"])
 
-# واجهة التطبيق
-st.title(t["title"])
-st.markdown(f"### {t['welcome']}")
-
-# عرض جميع الأقسام داخل Expanders
+# عرض الأقسام والمواضيع
 for section_name, topics in knowledge[lang].items():
+    with st.expander(section_name):
+        topic_selected = st.selectbox(titles[lang]["select_topic"], options=list(topics.keys()),
+                                      key=f"{section_name}_{lang}")
+        if topic_selected:
+            st.markdown(f"*{titles[lang]['result']}:*")
+            st.info(topics[topic_selected])
 
-   import streamlit as st
-
-# ... هنا محتوى صفحتك كامل فوق ...
-
-# توقيع يظهر بأسفل الصفحة فقط
+# التوقيع السفلي
 st.markdown(
     """
     <div style="position: fixed; bottom: 0; width: 100%; padding: 10px 0; background-color: #f0f2f6; text-align: center; font-size: 13px; color: #555;">
