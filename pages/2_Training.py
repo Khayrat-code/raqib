@@ -1,26 +1,31 @@
+
 import streamlit as st
+from PIL import Image
 import json
 
-# إعداد الصفحة
-st.set_page_config(page_title="RAQIB - Training", layout="centered")
-st.title("Awareness & Training")
-st.markdown("Here you can access training materials, awareness documents, and visual guides for inspectors.")
+st.set_page_config(page_title="RAQIB - Training", page_icon="favicon.png", layout="centered")
 
-# تحميل قاعدة البيانات
+with st.sidebar:
+    logo = Image.open("favicon.png")
+    st.image(logo, width=130)
+    st.markdown("---")
+    st.markdown("**RAQIB | رقيب**")
+    st.markdown("Smart Nuclear Safety & Inspection Assistant")
+    st.markdown("[@Nuclear2024](https://x.com/Nuclear2024)")
+
+st.markdown("<h1 style='text-align: center; color: #0a3d62;'>Awareness & Training</h1>", unsafe_allow_html=True)
+st.markdown("<hr style='border:1px solid #ccc;'>", unsafe_allow_html=True)
+
 with open("RAQIB_KnowledgeBase_Expanded.json", "r", encoding="utf-8") as f:
     knowledge = json.load(f)
 
-# عرض الأقسام
 sections = list(knowledge.keys())
 selected_section = st.selectbox("اختر القسم التدريبي | Select Training Category", sections)
 
-# عرض المواضيع داخل القسم
 if selected_section in knowledge:
     topics = list(knowledge[selected_section].keys())
-    selected_topic = st.selectbox("اختر الموضوع | Select Topic", topics)
+    selected_topic = st.selectbox("اختر الموضوع التدريبي | Select Topic", topics)
     result = knowledge[selected_section][selected_topic]
-
-    # عرض النتيجة
     st.markdown("### المادة التدريبية | Training Content:")
     st.success(result)
 else:
