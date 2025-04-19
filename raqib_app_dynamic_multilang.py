@@ -46,4 +46,3 @@ with col2:
     </p>
     """,
     unsafe_allow_html=True)
-)
