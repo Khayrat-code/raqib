@@ -5,7 +5,7 @@ from PIL import Image
 st.set_page_config(page_title="RAQIB - Nuclear Inspection Assistant", layout="centered")
 
 # عرض الشعار في الأعلى
-logo = Image.open("raqib_logo_dark.png")
+logo = Image.open("favicon.png")
 st.image(logo, width=130)
 
 # اختيار اللغة
