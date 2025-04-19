@@ -8,7 +8,7 @@ logo = Image.open("favicon.png")
 st.image(logo, width=70)
 
 # تحميل قاعدة البيانات الموسعة
-with open("RAQIB_KnowledgeBase_Multilang_Expanded.json", "r", encoding="utf-8") as f:
+with open("RAQIB_KnowledgeBase_Full_Expanded.json", "r", encoding="utf-8") as f:
     knowledge = json.load(f)
 
 # اختيار اللغة من الواجهة
