@@ -9,7 +9,6 @@ st.title("Inspection Dashboard")
 with open("RAQIB_KnowledgeBase_Multilang.json", "r", encoding="utf-8") as f:
     knowledge = json.load(f)
 
-# اختيار اللغة
 languages = list(knowledge.keys())
 lang = st.radio("اختر اللغة | Choose Language", languages)
 
@@ -19,14 +18,17 @@ section_map = {
     "Regulatory Inspection": "regulatory_inspection"
 }
 
+# عرض أسماء الأقسام للمستخدم
 display_sections = list(section_map.keys())
 selected_display = st.selectbox("اختر القسم | Select Section", display_sections)
-selected_section = section_map[selected_display]
+
+# نحصل على اسم القسم الفعلي من القاموس
+actual_section = section_map[selected_display]
 
 # عرض المواضيع
-topics = list(knowledge[lang][selected_section].keys())
+topics = list(knowledge[lang][actual_section].keys())
 selected_topic = st.selectbox("اختر الموضوع | Select Topic", topics)
 
 # عرض النتيجة
 st.markdown("### النتيجة | Result:")
-st.success(knowledge[lang][selected_section][selected_topic])
+st.success(knowledge[lang][actual_section][selected_topic])
