@@ -66,4 +66,4 @@ st.markdown(f"### {t['welcome']}")
 # عرض كل الأقسام ومحتواها داخل الصفحة
 for section_name, topics in knowledge[lang].items():
     with st.expander(f"📂 {section_name}", expanded=False):
-        topic_selected =
+        topic_selected = st.selectbox(labels["select_topic"], topics)
