@@ -41,7 +41,7 @@ with col2:
     <p style="text-align: center;">
         <a href="https://twitter.com/Nuclear2024" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="20" style="vertical-align: middle;"/>
-            <span style="margin-left: 5px;">@اسم_حسابك</span>
+            <span style="margin-left: 5px;">@Nuclear2024</span>
         </a>
     </p>
     """,
