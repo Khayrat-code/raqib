@@ -9,7 +9,7 @@ logo = Image.open("raqib_logo_dark.png")
 st.image(logo, width=130)
 
 # تحميل قاعدة البيانات
-with open("RAQIB_KnowledgeBase_Expanded.json", "r", encoding="utf-8") as f:
+with open("RAQIB_KnowledgeBase_Multilang.json", "r", encoding="utf-8") as f:
     knowledge = json.load(f)
 
 # عرض اختيار اللغة من القاعدة نفسها
