@@ -32,6 +32,18 @@ st.success(knowledge[lang][selected_section][selected_topic])
 st.markdown("---")
 col1, col2 = st.columns([0.1, 0.9])
 with col1:
-    st.image("raqib_logo_dark.png", width=25)
+    st.image("raqib_logo_dark.png", width=38)
 with col2:
     st.markdown("<p style='font-size:13px; padding-top:5px;'>Nuclear Inspection Assistant</p>", unsafe_allow_html=True)
+    st.markdown(
+    """
+    <p style="text-align: center; padding-top:5px;">Nuclear Inspection Assistant</p>
+    <p style="text-align: center;">
+        <a href="https://twitter.com/Nuclear2024" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" width="20" style="vertical-align: middle;"/>
+            <span style="margin-left: 5px;">@اسم_حسابك</span>
+        </a>
+    </p>
+    """,
+    unsafe_allow_html=True
+)
