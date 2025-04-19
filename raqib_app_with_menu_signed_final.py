@@ -3,7 +3,7 @@ import streamlit as st
 import json
 
 # إعداد الصفحة
-st.set_page_config(page_title="رقيب RAQIB", page_icon="🛡️", layout="centered")
+st.set_page_config(page_title="رقيب RAQIB - Nuclear Inspection Assistant", page_icon="🛡️", layout="centered")
 
 # تحميل قاعدة البيانات
 with open("Expanded_IAEA_Knowledge_Base.json", "r", encoding="utf-8") as f:
