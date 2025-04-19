@@ -40,9 +40,10 @@ with col2:
     <p style="text-align: center; padding-top:5px;">Nuclear Inspection Assistant</p>
     <p style="text-align: center;">
         <a href="https://twitter.com/Nuclear2024" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" width="20" style="vertical-align: middle;"/>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/X_logo_2023.svg" width="18" style="vertical-align: middle;"/>
             <span style="margin-left: 5px;">@Nuclear2024</span>
         </a>
     </p>
     """,
-    unsafe_allow_html=True)
+    unsafe_allow_html=True
+)
