@@ -1,5 +1,5 @@
 {
-    "العربية": {
+    "ar": {
         "التفتيش": {
             "أنواع التفتيش": "تفتيش دوري، مفاجئ، استجابة لحادث، تحقق دوري.",
             "متطلبات ما قبل التفتيش": "استعراض الوثائق، التراخيص، تحليل المخاطر.",
@@ -19,7 +19,7 @@
             "الأسئلة الشائعة": "أين أجد حدود الجرعة؟ كيف أبلغ عن تسريب إشعاعي؟"
         }
     },
-    "English": {
+    "en": {
         "Inspection": {
             "Inspection Types": "Routine, unannounced, incident response, periodic verification.",
             "Pre-Inspection Requirements": "Document review, licensing check, risk analysis.",
@@ -39,7 +39,7 @@
             "FAQs": "Where to find dose limits? How to report a leak?"
         }
     },
-    "Deutsch": {
+    "de": {
         "Inspektion": {
             "Inspektionsarten": "Routine, unangekündigt, Notfallreaktion, regelmäßige Überprüfung.",
             "Voraussetzungen vor der Inspektion": "Dokumentenprüfung, Lizenzkontrolle, Risikoanalyse.",
@@ -59,7 +59,7 @@
             "FAQs": "Wo finde ich Dosisgrenzen? Wie melde ich ein Leck?"
         }
     },
-    "한국어": {
+    "ko": {
         "검사": {
             "검사 유형": "정기, 불시, 사고 대응, 정기 검증.",
             "사전 검사 요건": "문서 검토, 허가 확인, 위험 분석.",
