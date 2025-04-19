@@ -1,0 +1,35 @@
+{
+  "languages": {
+    "ar": "العربية",
+    "en": "English",
+    "de": "Deutsch",
+    "ko": "한국어"
+  },
+  "sections": [
+    {
+      "id": "radiation_protection",
+      "name": {
+        "ar": "الحماية من الإشعاع",
+        "en": "Radiation Protection",
+        "de": "Strahlenschutz",
+        "ko": "방사선 보호"
+      },
+      "topics": {
+        "occupational_exposure_limit": {
+          "ar": "حد التعرض المهني",
+          "en": "Occupational Exposure Limit",
+          "de": "Berufliche Expositionsgrenze",
+          "ko": "직업적 노출 한계",
+          "value": "20 mSv per year (averaged over 5 years), with no more than 50 mSv in a single year."
+        },
+        "public_exposure_limit": {
+          "ar": "حد التعرض للجمهور",
+          "en": "Public Exposure Limit",
+          "de": "Expositionsgrenze für die Öffentlichkeit",
+          "ko": "일반인 노출 한계",
+          "value": "1 mSv per year (excluding natural and medical exposures)."
+        }
+      }
+    }
+  ]
+}
