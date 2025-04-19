@@ -35,7 +35,7 @@ with col1:
     st.image("raqib_logo_dark.png", width=38)
 with col2:
     st.markdown("<p style='font-size:13px; padding-top:5px;'>Nuclear Inspection Assistant</p>", unsafe_allow_html=True)
-   st.markdown(
+    st.markdown(
     """
     <p style="text-align: center; padding-top:5px;">Nuclear Inspection Assistant</p>
     <p style="text-align: center;">
