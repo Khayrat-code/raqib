@@ -1,35 +1,27 @@
+
 import streamlit as st
+from PIL import Image
 
-st.set_page_config(page_title="RAQIB - Home", layout="centered")
+# إعداد الصفحة
+st.set_page_config(page_title="RAQIB - Home", page_icon="favicon.png", layout="centered")
 
-# Logo and Title
-st.image("raqib_logo_temp.png", width=120)
-st.title("Welcome to RAQIB")
+# الشريط الجانبي
+with st.sidebar:
+    logo = Image.open("favicon.png")
+    st.image(logo, width=130)
+    st.markdown("---")
+    st.markdown("**RAQIB | رقيب**")
+    st.markdown("Smart Nuclear Safety & Inspection Assistant")
+    st.markdown("[@Nuclear2024](https://x.com/Nuclear2024)")
 
-# Description
-st.markdown("""
-**RAQIB** is a smart digital assistant designed to support nuclear inspectors with multilingual, real-time access to safety standards, inspection protocols, and waste classification guidance.
+# الصفحة الرئيسية
+st.markdown("<h1 style='text-align: center; color: #0a3d62;'>RAQIB | Nuclear Inspection Assistant</h1>", unsafe_allow_html=True)
+st.markdown("<hr style='border:1px solid #ccc;'>", unsafe_allow_html=True)
 
-Built to align with IAEA regulations, RAQIB enhances field efficiency, reduces human error, and transforms inspection into a modern, data-driven process.
-""")
-
-# Navigation Buttons
-st.markdown("### Navigate to:")
-col1, col2, col3 = st.columns(3)
-with col1:
-    st.page_link("pages/1_Inspection.py", label="Inspection", icon="🧪")
-with col2:
-    st.page_link("pages/2_Training.py", label="Awareness", icon="📘")
-with col3:
-    st.page_link("pages/3_Support.py", label="Support", icon="🛠️")
-
-# Footer
-footer = """
-<div style='text-align:center; font-size:13px; color:gray;'>
-    Designed & Developed by Khayrat Alameer<br>
-    <a href="mailto:khayratum@gmail.com">khayratum@gmail.com</a> |
-    <a href="https://twitter.com/Nuclear2024" target="_blank">@Nuclear2024</a>
-</div>
-"""
-st.markdown("---")
-st.markdown(footer, unsafe_allow_html=True)
+st.markdown("### Welcome to RAQIB")
+st.write("This intelligent assistant helps nuclear inspectors access procedures, thresholds, and regulatory info efficiently.")
+st.markdown("#### Navigate through the sections:")
+st.markdown("- **Inspection Dashboard**: Review safety limits and protocols.")
+st.markdown("- **Training & Awareness**: Access IAEA guides and safety manuals.")
+st.markdown("- **Support & Docs**: Get technical help and regulations.")
+st.success("Choose a section from the sidebar to get started.")
