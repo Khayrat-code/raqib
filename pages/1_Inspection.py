@@ -1,35 +1,41 @@
 import streamlit as st
 
-# استرجاع اللغة المختارة من session_state
-lang = st.session_state.get("language", "en")  # الافتراضي: English
-import streamlit as st
-from PIL import Image
-import json
+# التحقق من اختيار اللغة من الصفحة الرئيسية
+if "language" not in st.session_state:
+    st.warning("يرجى اختيار اللغة من الصفحة الرئيسية | Please select a language from the home page.")
+    st.stop()
 
-st.set_page_config(page_title="RAQIB - Inspection", page_icon="favicon.png", layout="centered")
+# استرجاع اللغة المختارة
+lang = st.session_state.get("language", "en")
 
-with st.sidebar:
-    logo = Image.open("favicon.png")
-    st.image(logo, width=130)
-    st.markdown("---")
-    st.markdown("**RAQIB | رقيب**")
-    st.markdown("Smart Nuclear Safety & Inspection Assistant")
-    st.markdown("[@Nuclear2024](https://x.com/Nuclear2024)")
+# إعداد الصفحة
+st.set_page_config(page_title="RAQIB | Inspection", layout="centered")
 
-st.markdown("<h1 style='text-align: center; color: #0a3d62;'>Inspection Dashboard</h1>", unsafe_allow_html=True)
-st.markdown("<hr style='border:1px solid #ccc;'>", unsafe_allow_html=True)
+# عرض المحتوى حسب اللغة المختارة
+if lang == "ar":
+    st.title("لوحة التفتيش")
+    st.markdown("هذه الصفحة تتيح لك مراجعة حدود الأمان، الإجراءات، والوثائق التنظيمية.")
+    st.markdown("- اختر القسم")
+    st.markdown("- استعرض حدود الجرعات")
+    st.markdown("- عرض بروتوكولات الفحص الميداني")
 
-with open("RAQIB_KnowledgeBase_Expanded.json", "r", encoding="utf-8") as f:
-    knowledge = json.load(f)
+elif lang == "de":
+    st.title("Inspektionsübersicht")
+    st.markdown("Diese Seite bietet einen Überblick über Sicherheitsgrenzen, Protokolle und Dokumentationen.")
+    st.markdown("- Kategorie auswählen")
+    st.markdown("- Grenzwerte überprüfen")
+    st.markdown("- Inspektionsprotokolle anzeigen")
 
-sections = list(knowledge.keys())
-selected_section = st.selectbox("اختر القسم | Select Section", sections)
+elif lang == "kr":
+    st.title("검사 대시보드")
+    st.markdown("이 페이지에서는 방사선 기준, 절차, 문서를 확인할 수 있습니다.")
+    st.markdown("- 범주 선택")
+    st.markdown("- 기준 수치 확인")
+    st.markdown("- 검사 절차 보기")
 
-if selected_section in knowledge:
-    topics = list(knowledge[selected_section].keys())
-    selected_topic = st.selectbox("اختر الموضوع | Select Topic", topics)
-    result = knowledge[selected_section][selected_topic]
-    st.markdown("### النتيجة | Result:")
-    st.success(result)
 else:
-    st.warning("No data available for this section.")
+    st.title("Inspection Dashboard")
+    st.markdown("This page allows you to review safety limits, protocols, and documentation.")
+    st.markdown("- Choose section")
+    st.markdown("- Review dose thresholds")
+    st.markdown("- Access field inspection protocols")
