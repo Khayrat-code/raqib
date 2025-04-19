@@ -1,4 +1,7 @@
+import streamlit as st
 
+# استرجاع اللغة المختارة من session_state
+lang = st.session_state.get("language", "en")  # الافتراضي: English
 import streamlit as st
 from PIL import Image
 import json
