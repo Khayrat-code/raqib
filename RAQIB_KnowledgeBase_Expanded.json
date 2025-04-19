@@ -1,0 +1,37 @@
+{
+    "Nuclear_Safety": {
+        "annual_dose_limit": "Workers: 20 mSv/year (max 50 mSv in any single year). Public: 1 mSv/year.",
+        "radiation_zones": "Defined by dose rate: Controlled, Supervised, Free zones.",
+        "PPE_requirements": "Lead aprons, gloves, eyewear for high radiation areas.",
+        "action_thresholds": "Alert at 5 µSv/h, Action at 20 µSv/h.",
+        "alarm_levels": "Portable dosimeter alarms set to 5 µSv/h."
+    },
+    "Radiation_Monitoring": {
+        "inspection_frequency": "Monthly inspections + quarterly comprehensive reviews.",
+        "measurement_units": "µSv/h, mSv, Bq/cm².",
+        "dosimeter_usage": "Required in high-dose areas (>1 µSv/h).",
+        "contamination_thresholds": "Alpha: 4 Bq/cm², Beta/Gamma: 40 Bq/cm²."
+    },
+    "Nuclear_Waste": {
+        "waste_classes": "Low, Intermediate, High level waste.",
+        "storage_limits": "Max 0.5 µSv/h in spent fuel areas.",
+        "transport": "Shielded casks, route control, radiation logging.",
+        "decay_guidelines": "Monitored 10-50 years depending on isotope."
+    },
+    "Inspections_Regulations": {
+        "protocols": "Based on IAEA GS-R-1 & GSR Part 1.",
+        "report_submission": "Within 24h to national authority.",
+        "leak_response": "Evacuate, isolate, assess, notify authority.",
+        "licensing": "Licenses reviewed every 5 years or after modifications."
+    },
+    "Fuel_Cycle": {
+        "enrichment_levels": "Natural (0.7%), LEU (3–5%), HEU (>20%).",
+        "fuel_handling": "Hot cells, shielded transport.",
+        "disposal_routes": "Deep geological disposal, dry storage.",
+        "security_measures": "Physical barriers, electronic surveillance."
+    },
+    "signature": {
+        "en": "Developed and Programmed by Khayrat Alameer (RAQIB AI Project)",
+        "ar": "تصميم وبرمجة: خيرات الأمير (مشروع الذكاء الاصطناعي رقيب)"
+    }
+}
