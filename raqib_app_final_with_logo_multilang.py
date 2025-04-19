@@ -13,7 +13,7 @@ st.markdown("### اختر اللغة | Choose Language")
 lang = st.radio("", ["العربية", "English"])
 
 # تحميل قاعدة البيانات
-with open("Expanded_IAEA_Knowledge.json", "r", encoding="utf-8") as f:
+with open("EXPANDED_IAEA_Knowledge.json", "r", encoding="utf-8") as f:
     knowledge = json.load(f)
 
 # الأقسام والمواضيع
