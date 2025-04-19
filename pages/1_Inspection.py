@@ -13,18 +13,17 @@ with open("RAQIB_KnowledgeBase_Multilang.json", "r", encoding="utf-8") as f:
 languages = list(knowledge.keys())
 lang = st.radio("اختر اللغة | Choose Language", languages)
 
-# الأقسام المخصصة للعرض، وربطها بالمسميات في JSON
+# ربط الأسماء الظاهرة بالمفاتيح الحقيقية
 section_map = {
-    "Nuclear_Safety": "radiation_protection",
-    "Dose_Limits": "collective_dose_limit",
-    "Inspection_Rules": "regulatory_inspection"
+    "Nuclear Safety": "radiation_protection",
+    "Regulatory Inspection": "regulatory_inspection"
 }
 
 display_sections = list(section_map.keys())
 selected_display = st.selectbox("اختر القسم | Select Section", display_sections)
 selected_section = section_map[selected_display]
 
-# المواضيع
+# عرض المواضيع
 topics = list(knowledge[lang][selected_section].keys())
 selected_topic = st.selectbox("اختر الموضوع | Select Topic", topics)
 
